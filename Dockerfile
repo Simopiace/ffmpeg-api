@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y ffmpeg
 WORKDIR /app
 COPY . .
 
-RUN pip install flask
+RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
